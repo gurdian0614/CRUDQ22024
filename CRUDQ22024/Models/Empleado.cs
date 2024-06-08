@@ -6,7 +6,7 @@ namespace CRUDQ22024.Models
     public class Empleado
     {
         [PrimaryKey, AutoIncrement]
-        public int ID { get; set; }
+        public int Id { get; set; }
 
         [NotNull]
         public string Nombre { get; set;}
