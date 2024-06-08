@@ -40,13 +40,23 @@ namespace CRUDQ22024.Services
         }
 
         /// <summary>
-        /// Actualiza un registro seleccionado
+        /// Actualiza un empleado seleccionado
         /// </summary>
         /// <param name="empleado">Objeto con datos del empleado a actualizar</param>
         /// <returns>Cantidad de resgistros actualizados</returns>
         public int Update(Empleado empleado) 
         {
             return dbConnection.Update(empleado);
+        }
+
+        /// <summary>
+        /// Elimina un empleado
+        /// </summary>
+        /// <param name="empleado">Objeto con datos del empleado a eliminar</param>
+        /// <returns>Cantidad de resgistros eliminados</returns>
+        public int Delete(Empleado empleado)
+        {
+            return dbConnection.Delete(empleado);
         }
     }
 }
