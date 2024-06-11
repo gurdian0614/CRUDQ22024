@@ -18,6 +18,24 @@ namespace CRUDQ22024.Services
             
             //Creamos la tabla Empleado
             dbConnection.CreateTable<Empleado>();
+
+            /*Empleado emp = new Empleado();
+            emp.Nombre = "Roger Gurdian";
+            emp.Direccion = "San Pedro Sula, Cortes";
+            emp.Email = "rogergurdian@unitec.edu";
+            Insert(emp);
+
+            Empleado emp1 = new Empleado();
+            emp1.Nombre = "Juan Perez";
+            emp1.Direccion = "Tegucigalpa, Francisco Morazán";
+            emp1.Email = "juan.perez@unitec.edu";
+            Insert(emp1);
+
+            Empleado emp2 = new Empleado();
+            emp2.Nombre = "Maria Perez";
+            emp2.Direccion = "Santa Bárbara, Santa Bárbara";
+            emp2.Email = "maria.perez@unitec.edu";
+            Insert(emp2);*/
         }
 
         /// <summary>
