@@ -57,7 +57,7 @@ namespace CRUDQ22024.ViewModels
         /// <param name="empleado">Objeto seleccionado para actualizar o eliminar</param>
         /// <returns></returns>
         [RelayCommand]
-        private async Task selectEmpleado(Empleado empleado)
+        private async Task SelectEmpleado(Empleado empleado)
         {
             try
             {
