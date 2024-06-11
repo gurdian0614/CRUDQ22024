@@ -1,4 +1,6 @@
-﻿namespace CRUDQ22024
+﻿using CRUDQ22024.Views;
+
+namespace CRUDQ22024
 {
     public partial class App : Application
     {
@@ -6,7 +8,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
+            MainPage = new NavigationPage(new EmpleadoMain());
         }
     }
 }
