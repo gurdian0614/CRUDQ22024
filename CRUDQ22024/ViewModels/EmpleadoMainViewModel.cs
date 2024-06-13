@@ -66,8 +66,7 @@ namespace CRUDQ22024.ViewModels
                 switch (res)
                 {
                     case "Actualizar":
-                        //TODO descomentar cuando se cree el view model para addEmpleadoForm
-                        //await App.Current.MainPage.Navigation.PushAsync(new AddEmpleadoForm(empleado));
+                        await App.Current.MainPage.Navigation.PushAsync(new AddEmpleadoForm(empleado));
                         break;
                     case "Eliminar":
                         bool respuesta = await App.Current!.MainPage!.DisplayAlert("ELIMINAR EMPLEADO", "¿Desea eliminar el registro de empleado?", "Si", "No");

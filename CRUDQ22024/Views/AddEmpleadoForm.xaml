@@ -2,11 +2,19 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CRUDQ22024.Views.AddEmpleadoForm"
+             xmlns:viewModel="clr-namespace:CRUDQ22024.ViewModels"
+             x:DataType="viewModel:AddEmpleadoFormViewModel"
              Title="AddEmpleadoForm">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+    <VerticalStackLayout Padding="30,0,30,0" Spacing="5" VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+        <Label Text="Nombre completo:" />
+        <Entry Text="{Binding NombreProperty}" Keyboard="Text" Placeholder="Ingrese el nombre completo del empleado" />
+
+        <Label Text="Correo electrónico:" />
+        <Entry Text="{Binding EmailProperty}" Keyboard="Email" Placeholder="Ingrese el correo electrónico" />
+
+        <Label Text="Dirección (Opcional):" />
+        <Entry Text="{Binding DireccionProperty}" />
+
+        <Button Text="Guardar" Command="{Binding AddUpdateCommand}" />
     </VerticalStackLayout>
 </ContentPage>
